@@ -1,4 +1,4 @@
-FROM debian:12.1
+FROM debian:12.5
 MAINTAINER Charles Plessy <charles.plessy@oist.jp>
 
 RUN apt -y update
