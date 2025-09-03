@@ -17,11 +17,11 @@ singularity pull docker://ghcr.io/oist/bioinfougrp_debianmed_images:latest
 
 Make sure you have a [token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) with at least read permissions for packages.
 
-Example with `12.1-1`.
+Example with `13.0-1`.
 
 ```
 podman login ghcr.io
 podman pull  ghcr.io/oist/bioinfougrp_debianmed_images:latest
-podman tag   ghcr.io/oist/bioinfougrp_debianmed_images:latest ghcr.io/oist/bioinfougrp_debianmed_images:12.1-1
-podman push  ghcr.io/oist/bioinfougrp_debianmed_images:12.1-1
+podman tag   ghcr.io/oist/bioinfougrp_debianmed_images:latest ghcr.io/oist/bioinfougrp_debianmed_images:13.0-1
+podman push  ghcr.io/oist/bioinfougrp_debianmed_images:13.0-1
 ```
