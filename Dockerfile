@@ -7,3 +7,8 @@ RUN apt -y install perl-doc man-db && apt-get clean                             
 RUN DEBIAN_FRONTEND=noninteractive apt -y install bioperl python3-biopython && apt-get clean # Bioinfo packages
 RUN DEBIAN_FRONTEND=noninteractive apt -y install med-cloud && apt-get clean                 # Bioinfo packages
 RUN DEBIAN_FRONTEND=noninteractive apt -y install med-bio && apt-get clean                   # Bioinfo packages
+
+RUN apt -y purge apt --allow-remove-essential --auto-remove
+
+ADD https://salsa.debian.org/plessy/debalamod/-/raw/master/debalamod /
+RUN chmod 775 /debalamod
